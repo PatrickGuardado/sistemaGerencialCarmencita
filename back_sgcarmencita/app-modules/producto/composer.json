@@ -1,0 +1,24 @@
+{
+	"name": "modules/producto",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Producto\\": "src/",
+			"Modules\\Producto\\Tests\\": "tests/",
+			"Modules\\Producto\\Database\\Factories\\": "database/factories/",
+			"Modules\\Producto\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\Producto\\Providers\\ProductoServiceProvider"
+			]
+		}
+	}
+}

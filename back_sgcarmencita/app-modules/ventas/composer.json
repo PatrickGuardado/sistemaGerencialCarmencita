@@ -1,0 +1,24 @@
+{
+	"name": "modules/ventas",
+	"description": "",
+	"type": "library",
+	"version": "1.0",
+	"license": "proprietary",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"Modules\\Ventas\\": "src/",
+			"Modules\\Ventas\\Tests\\": "tests/",
+			"Modules\\Ventas\\Database\\Factories\\": "database/factories/",
+			"Modules\\Ventas\\Database\\Seeders\\": "database/seeders/"
+		}
+	},
+	"minimum-stability": "stable",
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Modules\\Ventas\\Providers\\VentasServiceProvider"
+			]
+		}
+	}
+}
