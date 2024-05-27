@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Ventas\Models;
+namespace Modules\Producto\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class DimProducto extends Model
 {
     use HasFactory;
-    protected $connection = "mysql_second";
-    protected $primarykey = "id";
-    public $timestamps = false;
+    protected $connection = 'mysql';
+    protected $primaryKey = 'id_producto';
 }

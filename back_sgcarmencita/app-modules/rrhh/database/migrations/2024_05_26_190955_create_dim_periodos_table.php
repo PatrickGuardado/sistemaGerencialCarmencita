@@ -9,16 +9,14 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-
-    protected $connection = "mysql_second";
+    protected $connection = 'mysql_third';
     public function up(): void
     {
-        Schema::create('dim_productos', function (Blueprint $table) {
-            $table->id();
+        Schema::create('dim_periodos', function (Blueprint $table) {
+            $table->id('id_periodo');
             //$table->timestamps();
-            $table->integer("id_producto");
-            $table->string("nombre_producto");
-            $table->decimal("precio_unitario",5,2);
+            $table->dateTime('fecha_inicio_periodo');
+            $table->dateTime('fecha_fin_periodo');
         });
     }
 
@@ -27,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('dim_productos');
+        Schema::dropIfExists('dim_periodos');
     }
 };

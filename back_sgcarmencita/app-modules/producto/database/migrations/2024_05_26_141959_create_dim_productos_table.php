@@ -9,16 +9,14 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-
-    protected $connection = "mysql_second";
+    protected $connection = 'mysql';
     public function up(): void
     {
         Schema::create('dim_productos', function (Blueprint $table) {
-            $table->id();
+            $table->id("id_producto");
             //$table->timestamps();
-            $table->integer("id_producto");
-            $table->string("nombre_producto");
-            $table->decimal("precio_unitario",5,2);
+            $table->string('codigo_barra_producto',15);
+            $table->string('nombre_producto',50);
         });
     }
 

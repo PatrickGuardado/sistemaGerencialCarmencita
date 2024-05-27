@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class DimDetalleVenta extends Model
 {
     use HasFactory;
-    protected $connection = "mysql";
+    protected $connection = "mysql_second";
     public $timestamps = false;
 }

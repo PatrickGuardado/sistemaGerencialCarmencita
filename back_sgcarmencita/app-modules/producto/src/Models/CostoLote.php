@@ -1,14 +1,13 @@
 <?php
 
-namespace Modules\Ventas\Models;
+namespace Modules\Producto\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class FacVenta extends Model
+class CostoLote extends Model
 {
     use HasFactory;
-    protected $connection = "mysql_second";
-    public $timestamps = false;
+    protected $connection = 'mysql';
     protected $primaryKey = 'id'; 
 }
