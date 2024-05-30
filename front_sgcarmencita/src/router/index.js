@@ -1,5 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import Login from '../views/Login.vue';
+import Profile from '../views/Profile.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -16,8 +18,34 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
-    }
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login,
+    },
+    {
+        path: '/profile',
+        name: 'Profile',
+        component: Profile,
+        meta: { requiresAuth: true },
+    },
   ]
 })
+
+// Se agrega la siguiente función para proteger las rutas que requieren autenticación
+router.beforeEach((to, from, next) => {
+
+  // Se obtiene el valor de la propiedad requiresAuth de la ruta a la que se intenta acceder
+  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+  const isAuthenticated = !!localStorage.getItem('auth_token');
+
+  // Si se intenta acceder a una ruta que requiere autenticación y el usuario no está autenticado, se redirige a la ruta de login
+  if (requiresAuth && !isAuthenticated) {
+      next('/login');
+  } else {
+      next();
+  }
+});
 
 export default router
