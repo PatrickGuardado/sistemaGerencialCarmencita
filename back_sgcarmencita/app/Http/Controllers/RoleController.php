@@ -3,12 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Role;
 
 class RoleController extends Controller
 {
     // Función para mostrar el rol del usuario
-    public function role(Request $request)
+    public function show($id)
     {
-        return response()->json(['role' => $request->user()->role]);
+        $role = Role::findOrFail($id);
+
+        return response()->json([
+            'name' => $role->name,
+        ]);
     }
 }
