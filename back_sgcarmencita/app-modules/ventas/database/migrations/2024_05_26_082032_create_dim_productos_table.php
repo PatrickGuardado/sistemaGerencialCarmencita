@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('dim_productos', function (Blueprint $table) {
             $table->id();
             //$table->timestamps();
-            $table->integer("id_producto");
+            $table->string("codigo_barra_producto");
             $table->string("nombre_producto");
             $table->decimal("precio_unitario",5,2);
         });
