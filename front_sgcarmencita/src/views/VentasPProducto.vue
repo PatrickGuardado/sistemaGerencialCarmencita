@@ -7,16 +7,16 @@
       <div class="flex justify-between items-center px-4 text-black">
         <div>
           <p><strong>Código:</strong> repvpp</p>
-          <label for="fecha-inicio"><strong>Fecha de Inicio:</strong></label>
+          <label for="fecha-inicio"><strong>Periodo analizado: Desde</strong></label>
           <input id="fecha-inicio" type="date" v-model="fechaInicio" class="ml-2 border border-gray-300 rounded px-3 py-2">
-          <label for="fecha-fin" style="padding-left:1rem;"><strong>Fecha de Fin:</strong></label>
+          <label for="fecha-fin" style="padding-left:1rem;"><strong>Hasta</strong></label>
           <input id="fecha-fin" type="date" v-model="fechaFin" class="ml-2 border border-gray-300 rounded px-3 py-2">
         </div>
         <p class="text-black">Fecha: {{ fechaActual }}</p>
       </div>
   
       <div class="flex justify-between px-4 mt-2" style="text-align: center;padding-top: 1rem;padding-bottom:0.5rem;">
-        <div style="padding-left: 19rem;">
+        <div style="padding-left: 16rem;">
           <p class="font-bold text-black" style="font-size: medium;">Tienda y Depósito Carmencita</p>
           <p class="text-black">Del {{ formatDate(fechaInicio) }} al {{ formatDate(fechaFin) }}</p>
         </div><div>

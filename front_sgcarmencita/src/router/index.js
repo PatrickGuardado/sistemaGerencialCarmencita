@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import Login from '../views/Login.vue';
 import Profile from '../views/Profile.vue';
 import VentasPProducto from '../views/VentasPProducto.vue';
+import AusentismoLaboralSemanal from '../views/AusentismoLaboralSemanal.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,11 @@ const router = createRouter({
       path: '/ventas_pproducto',
       name: 'Ventas por producto',
       component: VentasPProducto,
+    },
+    {
+      path: '/ausentismo_laboral_s',
+      name: 'Ausentismo laboral semanal',
+      component: AusentismoLaboralSemanal,
     },
     {
         path: '/profile',
