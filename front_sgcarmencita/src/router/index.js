@@ -4,6 +4,9 @@ import Login from '../views/Login.vue';
 import Profile from '../views/Profile.vue';
 import VentasPProducto from '../views/VentasPProducto.vue';
 import AusentismoLaboralSemanal from '../views/AusentismoLaboralSemanal.vue';
+import CicloVidaProducto from '../views/CicloVidaProducto.vue';
+import ClasificacionPuestosT from '../views/ClasificacionPuestosT.vue';
+import AreaRPersonal from '../views/AreaRPersonal.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,6 +33,21 @@ const router = createRouter({
       path: '/ventas_pproducto',
       name: 'Ventas por producto',
       component: VentasPProducto,
+    },
+    {
+      path: '/area_rotacion_personal',
+      name: 'Área de rotación del personal',
+      component: AreaRPersonal,
+    },
+    {
+      path: '/clasifi_puestos_t',
+      name: 'Clasificación de puestos trimestral',
+      component: ClasificacionPuestosT,
+    },
+    {
+      path: '/ciclo_vida_producto',
+      name: 'ciclo de vida de producto',
+      component: CicloVidaProducto,
     },
     {
       path: '/ausentismo_laboral_s',

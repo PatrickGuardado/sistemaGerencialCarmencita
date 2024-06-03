@@ -1,6 +1,6 @@
 <template>
     <div class="ventas_producto flex flex-col">
-      <h1 class="text-3xl font-bold text-left text-blue-800">Reporte de ventas por producto</h1>
+      <h1 class="text-3xl font-bold text-left text-blue-800" style="padding-top: 1rem;">Reporte de ventas por producto</h1>
   
       <hr class="border-b border-gray-200 mt-2 mb-2 w-full">
   
@@ -26,7 +26,7 @@
       </div>
   
       <div class="bg-white shadow-md rounded-lg overflow-hidden flex-1 mt-2"> <!-- Cambio de h-screen a flex-1 -->
-        <table class="w-full min-w-max leading-normal">
+        <table class="w-full min-w-max leading-normal" style="text-align: center;">
           <thead>
             <tr>
               <th
@@ -67,39 +67,127 @@
           "Promoción Aplicada"
         ],
         products: [
-          {
-            producto: "Producto A",
-            "cantidad vendida": 100,
-            "ingreso generado": "$1,000",
-            "margen de beneficio": 200,
-            "precio unitario": "$10",
-            "promoción aplicada": "Descuento del 10%"
-          },
-          {
-            producto: "Producto B",
-            "cantidad vendida": 200,
-            "ingreso generado": "$2,000",
-            "margen de beneficio": 250,
-            "precio unitario": "$8",
-            "promoción aplicada": "Descuento del 15%"
-          },
-          {
-            producto: "Producto C",
-            "cantidad vendida": 150,
-            "ingreso generado": "$1,500",
-            "margen de beneficio": 180,
-            "precio unitario": "$12",
-            "promoción aplicada": "Descuento del 5%"
-          },
-          {
-            producto: "Producto D",
-            "cantidad vendida": 120,
-            "ingreso generado": "$1,200",
-            "margen de beneficio": 220,
-            "precio unitario": "$10",
-            "promoción aplicada": "Sin promoción"
-          }
-        ],
+        {
+          producto: "Leche descremada",
+          "cantidad vendida": 1500,
+          "ingreso generado": "$12,000",
+          "margen de beneficio": 20,
+          "precio unitario": "$8",
+          "promoción aplicada": "Descuento del 10%"
+        },
+        {
+          producto: "Pan integral",
+          "cantidad vendida": 1200,
+          "ingreso generado": "$9,600",
+          "margen de beneficio": 25,
+          "precio unitario": "$8",
+          "promoción aplicada": "Descuento del 5%"
+        },
+        {
+          producto: "Jugo de naranja",
+          "cantidad vendida": 800,
+          "ingreso generado": "$4,800",
+          "margen de beneficio": 15,
+          "precio unitario": "$6",
+          "promoción aplicada": "Sin promoción"
+        },
+        {
+          producto: "Detergente en polvo",
+          "cantidad vendida": 950,
+          "ingreso generado": "$11,400",
+          "margen de beneficio": 30,
+          "precio unitario": "$12",
+          "promoción aplicada": "Descuento del 10%"
+        },
+        {
+          producto: "Cereal de avena",
+          "cantidad vendida": 600,
+          "ingreso generado": "$4,800",
+          "margen de beneficio": 18,
+          "precio unitario": "$8",
+          "promoción aplicada": "Descuento del 5%"
+        },
+        {
+          producto: "Huevos",
+          "cantidad vendida": 2000,
+          "ingreso generado": "$10,000",
+          "margen de beneficio": 10,
+          "precio unitario": "$5",
+          "promoción aplicada": "Descuento del 10%"
+        },
+        {
+          producto: "Manzanas",
+          "cantidad vendida": 1100,
+          "ingreso generado": "$7,700",
+          "margen de beneficio": 22,
+          "precio unitario": "$7",
+          "promoción aplicada": "Sin promoción"
+        },
+        {
+          producto: "Pasta integral",
+          "cantidad vendida": 700,
+          "ingreso generado": "$4,900",
+          "margen de beneficio": 19,
+          "precio unitario": "$7",
+          "promoción aplicada": "Descuento del 5%"
+        },
+        {
+          producto: "Arroz",
+          "cantidad vendida": 1600,
+          "ingreso generado": "$8,000",
+          "margen de beneficio": 12,
+          "precio unitario": "$5",
+          "promoción aplicada": "Sin promoción"
+        },
+        {
+          producto: "Aceite de oliva",
+          "cantidad vendida": 950,
+          "ingreso generado": "$19,000",
+          "margen de beneficio": 35,
+          "precio unitario": "$20",
+          "promoción aplicada": "Descuento del 15%"
+        },
+        {
+          producto: "Pollo",
+          "cantidad vendida": 1800,
+          "ingreso generado": "$27,000",
+          "margen de beneficio": 25,
+          "precio unitario": "$15",
+          "promoción aplicada": "Sin promoción"
+        },
+        {
+          producto: "Yogur natural",
+          "cantidad vendida": 1400,
+          "ingreso generado": "$9,800",
+          "margen de beneficio": 18,
+          "precio unitario": "$7",
+          "promoción aplicada": "Descuento del 10%"
+        },
+        {
+          producto: "Queso fresco",
+          "cantidad vendida": 1300,
+          "ingreso generado": "$13,000",
+          "margen de beneficio": 20,
+          "precio unitario": "$10",
+          "promoción aplicada": "Descuento del 5%"
+        },
+        {
+          producto: "Zanahorias",
+          "cantidad vendida": 900,
+          "ingreso generado": "$4,500",
+          "margen de beneficio": 22,
+          "precio unitario": "$5",
+          "promoción aplicada": "Sin promoción"
+        },
+        {
+          producto: "Tomates",
+          "cantidad vendida": 800,
+          "ingreso generado": "$4,000",
+          "margen de beneficio": 20,
+          "precio unitario": "$5",
+          "promoción aplicada": "Descuento del 5%"
+        }
+      ],
         fechaInicio: '', // Inicializamos la fecha de inicio
         fechaFin: '', // Inicializamos la fecha de fin
         fechaActual: '' // Inicializamos la fecha actual
