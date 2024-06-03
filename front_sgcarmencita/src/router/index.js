@@ -7,6 +7,7 @@ import AusentismoLaboralSemanal from '../views/AusentismoLaboralSemanal.vue';
 import CicloVidaProducto from '../views/CicloVidaProducto.vue';
 import ClasificacionPuestosT from '../views/ClasificacionPuestosT.vue';
 import AreaRPersonal from '../views/AreaRPersonal.vue';
+import ResumenReporteCicloVidaProducto from '../views/ResumenDeReporteDeCicloDeVidaDeProducto.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -59,6 +60,11 @@ const router = createRouter({
         name: 'Profile',
         component: Profile,
         meta: { requiresAuth: true },
+    },
+    {
+      path: '/resumen_reporte_ciclo_vida_producto',
+      name: 'Resumen de reporte de ciclo de vida de producto',
+      component: ResumenReporteCicloVidaProducto,
     },
   ]
 })
