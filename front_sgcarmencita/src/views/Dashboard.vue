@@ -14,7 +14,7 @@
     </div>
     <!-- Nuevo texto debajo de "Tienda y Depósito Carmencita" -->
     <div class="flex justify-center px-4 mt-2" style="text-align: center;padding-bottom: 1rem;">
-      <p class="font-bold text-black" style="font-size: medium;">¡BIENVENIDO!</p>
+      <p class="text-black" style="font-size: medium;">¡BIENVENIDO!</p>
     </div>
     <div class="grid grid-cols-3 gap-4">
       <!-- Opciones -->
