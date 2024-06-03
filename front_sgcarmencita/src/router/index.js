@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Dashboard from '../views/Dashboard.vue'
 import Login from '../views/Login.vue';
 import Profile from '../views/Profile.vue';
 import VentasPProducto from '../views/VentasPProducto.vue';
@@ -11,11 +11,6 @@ import AreaRPersonal from '../views/AreaRPersonal.vue';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
     {
       path: '/about',
       name: 'about',
@@ -30,27 +25,32 @@ const router = createRouter({
       component: Login,
     },
     {
-      path: '/ventas_pproducto',
+      path: '/reporte-ventas',
       name: 'Ventas por producto',
       component: VentasPProducto,
     },
     {
-      path: '/area_rotacion_personal',
+      path: '/',
+      name: 'Menú principal',
+      component: Dashboard,
+    },
+    {
+      path: '/reporte-rotacion-personal',
       name: 'Área de rotación del personal',
       component: AreaRPersonal,
     },
     {
-      path: '/clasifi_puestos_t',
+      path: '/reporte-clasificacion-puestos',
       name: 'Clasificación de puestos trimestral',
       component: ClasificacionPuestosT,
     },
     {
-      path: '/ciclo_vida_producto',
+      path: '/reporte-ciclo-vida',
       name: 'ciclo de vida de producto',
       component: CicloVidaProducto,
     },
     {
-      path: '/ausentismo_laboral_s',
+      path: '/reporte-ausentismo',
       name: 'Ausentismo laboral semanal',
       component: AusentismoLaboralSemanal,
     },

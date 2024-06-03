@@ -59,7 +59,7 @@
             remember_me: this.rememberMe,
           });
           localStorage.setItem('auth_token', response.data.access_token);
-          this.$router.push('/profile');
+          this.$router.push('/');
         } catch (error) {
           console.error('Login failed', error);
         }
