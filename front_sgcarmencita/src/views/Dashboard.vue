@@ -18,12 +18,10 @@
     </div>
     <div class="grid grid-cols-3 gap-4">
       <!-- Opciones -->
-      <router-link v-for="(option, index) in options" :key="index" :to="option.route">
-      <div class="flex flex-col items-center w-50 h-50 border border-gray-300 rounded-lg shadow-md" style="padding-top: 2rem;">
-        <img :src="option.imgSrc" :alt="option.altText" class="w-24 h-24 object-cover">
+      <router-link v-for="(option, index) in options" :key="index" :to="option.route" class="w-50 h-50 border border-gray-300 rounded-lg shadow-md flex flex-col items-center" style="padding-top: 2rem;">
+        <img :src="option.imgSrc" :alt="option.altText" class="w-24 h-24 object-cover mt-2">
         <p class="mt-2 text-center text-black">{{ option.text }}</p>
-      </div>
-    </router-link>
+      </router-link>
     </div>
   </template>
   
