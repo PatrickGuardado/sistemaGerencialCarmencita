@@ -8,6 +8,7 @@ import CicloVidaProducto from '../views/CicloVidaProducto.vue';
 import ClasificacionPuestosT from '../views/ClasificacionPuestosT.vue';
 import AreaRPersonal from '../views/AreaRPersonal.vue';
 import ResumenReporteCicloVidaProducto from '../views/ResumenDeReporteDeCicloDeVidaDeProducto.vue';
+import ResumenDeReporteDeClasificacionDePuestosTrimestral from '@/views/ResumenDeReporteDeClasificacionDePuestosTrimestral.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -65,6 +66,11 @@ const router = createRouter({
       path: '/resumen_reporte_ciclo_vida_producto',
       name: 'Resumen de reporte de ciclo de vida de producto',
       component: ResumenReporteCicloVidaProducto,
+    },
+    {
+      path: '/resumen_reporte_clasificacion_puestos_trimestral',
+      name: 'Resumen de reporte de clasificación de puestos trimestral',
+      component: ResumenDeReporteDeClasificacionDePuestosTrimestral,
     },
   ]
 })
