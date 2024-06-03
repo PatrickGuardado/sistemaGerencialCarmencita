@@ -28,31 +28,37 @@ const router = createRouter({
       path: '/reporte-ventas',
       name: 'Ventas por producto',
       component: VentasPProducto,
+      meta: { requiresAuth: true },
     },
     {
       path: '/',
       name: 'Menú principal',
       component: Dashboard,
+      meta: { requiresAuth: true },
     },
     {
       path: '/reporte-rotacion-personal',
       name: 'Área de rotación del personal',
       component: AreaRPersonal,
+      meta: { requiresAuth: true },
     },
     {
       path: '/reporte-clasificacion-puestos',
       name: 'Clasificación de puestos trimestral',
       component: ClasificacionPuestosT,
+      meta: { requiresAuth: true },
     },
     {
       path: '/reporte-ciclo-vida',
       name: 'ciclo de vida de producto',
       component: CicloVidaProducto,
+      meta: { requiresAuth: true },
     },
     {
       path: '/reporte-ausentismo',
       name: 'Ausentismo laboral semanal',
       component: AusentismoLaboralSemanal,
+      meta: { requiresAuth: true },
     },
     {
         path: '/profile',
