@@ -9,7 +9,8 @@ import ClasificacionPuestosT from '../views/ClasificacionPuestosT.vue';
 import AreaRPersonal from '../views/AreaRPersonal.vue';
 import ResumenReporteCicloVidaProducto from '../views/ResumenDeReporteDeCicloDeVidaDeProducto.vue';
 import ResumenDeReporteDeClasificacionDePuestosTrimestral from '@/views/ResumenDeReporteDeClasificacionDePuestosTrimestral.vue';
-import ResumenAreaRotacionMensual from '@views/ResumenDeReporteDeAreaDeRotacionMensual.vue';
+import ResumenAusentismoLaboralSemanal from '@/views/resumenAusentismoLaboralSemanal.vue';
+import ResumenAreaRotacionPersonal from '@/views/resumenAreaDeRotacionPersonal.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -74,9 +75,14 @@ const router = createRouter({
       component: ResumenDeReporteDeClasificacionDePuestosTrimestral,
     },
     {
-      path: '/resumen_reporte_area_rotacion_mensual',
-      name: 'Resumen de reporte de área de rotación mensual',
-      component: ResumenAreaRotacionMensual,
+      path: '/resumen_ausentismo_laboral_semanal',
+      name: 'Resumen de ausentismo laboral semanal',
+      component: ResumenAusentismoLaboralSemanal,
+    },
+    {
+      path: '/resumen_area_rotacion_personal',
+      name: 'Resumen de área de rotación personal',
+      component: ResumenAreaRotacionPersonal,
     },
   ]
 })
