@@ -9,6 +9,7 @@ import ClasificacionPuestosT from '../views/ClasificacionPuestosT.vue';
 import AreaRPersonal from '../views/AreaRPersonal.vue';
 import ResumenReporteCicloVidaProducto from '../views/ResumenDeReporteDeCicloDeVidaDeProducto.vue';
 import ResumenDeReporteDeClasificacionDePuestosTrimestral from '@/views/ResumenDeReporteDeClasificacionDePuestosTrimestral.vue';
+import ResumenAreaRotacionMensual from '@views/ResumenDeReporteDeAreaDeRotacionMensual.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -71,6 +72,11 @@ const router = createRouter({
       path: '/resumen_reporte_clasificacion_puestos_trimestral',
       name: 'Resumen de reporte de clasificación de puestos trimestral',
       component: ResumenDeReporteDeClasificacionDePuestosTrimestral,
+    },
+    {
+      path: '/resumen_reporte_area_rotacion_mensual',
+      name: 'Resumen de reporte de área de rotación mensual',
+      component: ResumenAreaRotacionMensual,
     },
   ]
 })
