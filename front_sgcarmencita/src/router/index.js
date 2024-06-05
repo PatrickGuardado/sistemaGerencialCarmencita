@@ -11,6 +11,7 @@ import ResumenReporteCicloVidaProducto from '../views/ResumenDeReporteDeCicloDeV
 import ResumenDeReporteDeClasificacionDePuestosTrimestral from '@/views/ResumenDeReporteDeClasificacionDePuestosTrimestral.vue';
 import ResumenAusentismoLaboralSemanal from '@/views/resumenAusentismoLaboralSemanal.vue';
 import ResumenAreaRotacionPersonal from '@/views/resumenAreaDeRotacionPersonal.vue';
+import ResumenReporteVentasPorProducto from '@/views/ResumenReporteVentasPorProducto.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -83,6 +84,11 @@ const router = createRouter({
       path: '/resumen_area_rotacion_personal',
       name: 'Resumen de área de rotación personal',
       component: ResumenAreaRotacionPersonal,
+    },
+    {
+      path: '/resumen_reporte_ventas_por_producto',
+      name: 'Resumen de reporte de ventas por producto',
+      component: ResumenReporteVentasPorProducto,
     },
   ]
 })
